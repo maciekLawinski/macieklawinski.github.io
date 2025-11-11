@@ -15,7 +15,7 @@
 }
 
 /* Add spacing so content isn't hidden behind the fixed top bar */
-.destinations,
+.Ireland,
 .ireland-page {
   margin-top: 100px;
   text-align: center;
@@ -31,3 +31,4 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
