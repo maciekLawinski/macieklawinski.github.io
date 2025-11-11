@@ -20,13 +20,14 @@ div {
 title{
 
 }
-a {
+destinations {
   color: blue;
   text-decoration: none; /* removes underline */
   font-size: 20px;
 }
 
-a:hover {
+destinations:hover {
   text-decoration: underline; /* visible hover effect */
 }
+
 
