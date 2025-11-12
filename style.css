@@ -9,10 +9,20 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-size: 24px;
   z-index: 1000;
+  list-style-type: none;
 }
+    li1{
+        float: left;
+
+    }
+    li1 a{
+        text-align: center;
+        padding: 16px;
+        color: white;
+    }
 
 /* Add spacing so content isn't hidden behind the fixed top bar */
 .Ireland,
@@ -22,10 +32,17 @@
 }
 
 /*poland link */
-.poland,
+.Poland{
+   margin-top: 90px;
+  text-align: center;
+}
 .Poland-page {
   margin-top: 90px;
   text-align: center; 
+}
+.Poland-Destination {
+
+
 }
 /* Link styling */
 a {
@@ -37,6 +54,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
 
 
