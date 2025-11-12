@@ -21,6 +21,12 @@
   text-align: center;
 }
 
+/*poland link */
+.poland,
+.poland-page {
+  margin-top: 90px;
+  text-align: center; 
+}
 /* Link styling */
 a {
   color: blue;
@@ -31,4 +37,5 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
