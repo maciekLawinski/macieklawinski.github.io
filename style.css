@@ -12,6 +12,7 @@
   justify-content: center;
   font-size: 24px;
   z-index: 1000;
+  list-style-type: none;
 }
  li1{
         float: left;
@@ -52,6 +53,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
 
 
