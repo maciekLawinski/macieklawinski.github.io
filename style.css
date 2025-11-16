@@ -52,12 +52,13 @@ a:hover {
   text-decoration: underline;
 }
 .spain-page {
-    background-image: url("Spain Photos-folder/Spain_flag.jpg");
+    background-image: url("../folder/Spain_flag.jpg");
     background-repeat: no-repeat; 
     background-position: center; 
     background-attachment: fixed;
   background-size: cover;
 }
+
 
 
 
