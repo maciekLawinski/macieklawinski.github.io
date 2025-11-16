@@ -51,6 +51,13 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.spain-page {
+    background-image: url("Spain_flag.jpg");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
 
 
 
