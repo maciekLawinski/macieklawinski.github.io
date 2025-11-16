@@ -65,6 +65,20 @@ a:hover {
 .spain-page h2 {
   color: black;
 }
+.image-row {
+  display: flex;         
+  justify-content: center; 
+  gap: 15px;               
+  margin-top: 10px;        
+}
+
+/* Individual image styling */
+.paragraph-image {
+  max-width: 45%; 
+  height: auto;  
+  border-radius: 6px;
+}
+
 
 
 
