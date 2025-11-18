@@ -155,8 +155,9 @@ a:hover {
 /* UNIVERSAL SECTION LAYOUT */
 .spain-section {
   display: flex;
+  flex-wrap: wrap; /* ensures mobile responsiveness */
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 25px;
   padding: 25px 0;
   border-bottom: 3px solid white;
@@ -174,44 +175,45 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: center;
+  align-items: center; /* centers images for hotel section */
 }
 
-/* LANDMARK ONE IMAGE */
-.img-col.single {
-  justify-content: center;
-}
-
-/* RESTAURANT SMALL IMAGES (Option A) */
-.paragraph-image.small {
-  width: 95%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-/* UNIVERSAL IMAGE SIZE (Hotels + Landmarks) */
+/* ALL IMAGES SAME SIZE */
 .paragraph-image {
-  width: 95%;
+  width: 100%;
+  max-width: 400px;
   height: 250px;
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* LANDMARK LAYOUT = IMAGE LEFT */
-.img-left .img-col {
-  order: 1;
-}
-.img-left .text-col {
-  order: 2;
+/* HOTELS: images centered under paragraph */
+.hotel .img-col {
+  align-items: center;
 }
 
-/* RESTAURANTS LAYOUT = WRITING LEFT, IMAGES RIGHT */
+/* RESTAURANTS: text left, images right, paragraph max width */
 .left-text .text-col {
-  order: 1;
+  width: 50%;
 }
+
 .left-text .img-col {
+  width: 45%;
+}
+
+.left-text .text-col p {
+  max-width: 100%;
+}
+
+/* LANDMARKS: text right, image left */
+.img-left .img-col {
+  order: 1;
+  width: 45%;
+}
+
+.img-left .text-col {
   order: 2;
+  width: 50%;
 }
 
 /* Links */
@@ -223,9 +225,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-
-
-
-
-
