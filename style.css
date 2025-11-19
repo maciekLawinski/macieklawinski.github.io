@@ -221,12 +221,11 @@ header .page-title {
     height: auto;           /* maintain aspect ratio on small screens */
   }
 }
-/* Wrapper with border */
 .restaurants-wrapper {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 1.5rem;
-  border: 2px solid #888;
+  border: 2px solid #888; /* single border */
   border-radius: 10px;
 }
 
@@ -241,11 +240,11 @@ header .page-title {
   color: #333;
 }
 
-/* Flex container for each restaurant */
+/* Restaurant container: flex row */
 .restaurants-wrapper .spain-section.restaurant .restaurant-container {
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* stacks on mobile */
   margin-bottom: 2rem;
 }
 
@@ -274,20 +273,18 @@ header .page-title {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-end; /* images aligned right */
 }
 
 .restaurants-wrapper .restaurant-container .img-col img {
-  width: 300px;
+  width: 300px;   /* fixed size */
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  flex-shrink: 0;
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .restaurants-wrapper .restaurant-container {
     flex-direction: column;
