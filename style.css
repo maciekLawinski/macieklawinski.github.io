@@ -497,15 +497,14 @@ font-size: 1.1rem;      /* slightly bigger text */
 }
 
 /* Centered Country Box */
+/* Centered Country Box */
 .country-box {
     width: 600px;
     margin: 50px auto;
     padding: 30px;
     border: 2px solid #1e3a8a;
     border-radius: 10px;
-
-    background: #d9ecff;      /* NEW: Light blue background */
-    
+    background: #d9ecff;      /* Light blue background */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -518,22 +517,21 @@ font-size: 1.1rem;      /* slightly bigger text */
     color: black;
 }
 
-/* SVG shapes default: filled with flags */
-.flag-poland { fill: url(#flag-poland); }
-.flag-spain  { fill: url(#flag-spain); }
-.flag-italy  { fill: url(#flag-italy); }
-.flag-france { fill: url(#flag-france); }
+/* Circular flags */
+.flag {
+    fill: url(#flag-poland);  /* placeholder, overridden for each flag in HTML */
+    transition: 0.25s ease;
+}
 
-/* Hover effect: country becomes red */
-.country:hover svg path {
+/* Hover effect: turns red */
+.country:hover svg circle {
     fill: red;
 }
 
 /* SVG sizes */
 .country svg {
-    width: 180px;
-    height: 180px;
-    transition: 0.25s ease;
+    width: 150px;
+    height: 150px;
 }
 
 /* Country names */
