@@ -1,7 +1,7 @@
 /* =======================
    Top Bar Across All Pages
 ======================= */
-/* Top navigation bar */
+/* Sticky top navigation bar */
 .navbar {
   position: sticky;
   top: 0;
@@ -9,11 +9,13 @@
   background-color: #1e3a8a; /* Blue */
   color: #fff;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
   padding: 15px 30px;
   z-index: 1000;
 }
 
+/* Navigation links */
 .navbar a {
   color: white;
   text-decoration: none;
@@ -22,24 +24,20 @@
 }
 
 .navbar a:hover {
-  background-color: #3b82f6; /* Lighter blue on hover */
+  background-color: #3b82f6; /* Lighter blue */
   border-radius: 4px;
 }
 
-/* Dropdown container */
+/* Dropdown */
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
-/* Dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #1e40af; /* Dropdown blue */
+  background-color: #1e40af;
   min-width: 160px;
-  top: 100%;
-  left: 0;
   border-radius: 4px;
   overflow: hidden;
   z-index: 1001;
@@ -51,7 +49,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #3b82f6; /* Blue hover */
+  background-color: #3b82f6;
 }
 
 /* Show dropdown on hover */
@@ -494,41 +492,45 @@ font-size: 1.1rem;      /* slightly bigger text */
   }
 }
 
-/* =======================
-   country box
-======================= */
+/* Centered Country Box */
 .country-box {
-    width: 500px;
-    padding: 20px;
+    width: 600px;
+    margin: 50px auto;              /* CENTER THE BOX */
+    padding: 30px;
     border: 2px solid #1e3a8a;
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
     background: #f5faff;
 }
 
+/* Each Country Block */
 .country {
     text-align: center;
     text-decoration: none;
     color: black;
 }
 
+/* SVG Country Shapes */
 .country svg {
-    width: 120px;
-    height: 120px;
-    fill: #555;            /* Default color */
+    width: 180px;
+    height: 180px;
+    fill: #555;                     /* Default grey */
     transition: fill 0.25s ease;
 }
 
+/* Hover turns red */
 .country:hover svg {
-    fill: red;             /* Hover color */
+    fill: red;
 }
 
+/* Country name label */
 .country span {
     margin-top: 8px;
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
+
 
