@@ -221,12 +221,12 @@ header .page-title {
     height: auto;           /* maintain aspect ratio on small screens */
   }
 }
-/* Wrapper with border around Restaurants section */
+/* Wrapper with border around all Restaurants section */
 .restaurants-wrapper {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 1.5rem;
-  border: 2px solid #888;   /* single border */
+  border: 2px solid #888; /* single border */
   border-radius: 10px;
 }
 
@@ -241,19 +241,20 @@ header .page-title {
   color: #333;
 }
 
-/* Restaurant sections: text left, images right */
+/* Restaurant section: text left, images right */
 .restaurants-wrapper .spain-section.restaurant {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  flex-wrap: wrap;  /* stacks on mobile */
   margin: 2rem 0;
+  flex-wrap: wrap; /* stack on small screens */
 }
 
 /* Text column */
 .restaurants-wrapper .spain-section.restaurant .text-col {
-  flex: 1 1 50%;
-  padding: 0 20px;
+  flex: 1 1 50%;       /* left half of the section */
+  max-width: 50%;
+  padding-right: 20px;
 }
 
 .restaurants-wrapper .spain-section.restaurant .text-col h3 {
@@ -269,15 +270,17 @@ header .page-title {
 
 /* Image column */
 .restaurants-wrapper .spain-section.restaurant .img-col {
-  flex: 1 1 50%;
+  flex: 1 1 50%;       /* right half of the section */
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: flex-end;  /* push images to the right */
+  justify-content: flex-start;
+  align-items: flex-end; /* images to the right */
 }
 
 .restaurants-wrapper .spain-section.restaurant .img-col img {
-  width: 300px;   /* fixed size */
+  width: 300px;        /* fixed size */
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
@@ -288,10 +291,16 @@ header .page-title {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .restaurants-wrapper .spain-section.restaurant {
-    flex-direction: column;  /* stack text above images */
+    flex-direction: column;  /* stack text above images on mobile */
+  }
+
+  .restaurants-wrapper .spain-section.restaurant .text-col,
+  .restaurants-wrapper .spain-section.restaurant .img-col {
+    max-width: 100%;
+    flex: 1 1 100%;
   }
 
   .restaurants-wrapper .spain-section.restaurant .img-col {
-    align-items: center;  /* center images on mobile */
+    align-items: center;     /* center images on mobile */
   }
 }
