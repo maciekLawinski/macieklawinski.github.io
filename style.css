@@ -141,40 +141,63 @@ header .page-title {
   font-size: 3rem;
   color: white;
   text-shadow: 1px 1px 4px black;
+   /* Hotels section styling only */
+}
    
-.spain-page .hotel {
+   .spain-section.hotel {
+  display: flex;
+  flex-wrap: wrap;       /* allows stacking on smaller screens */
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+  border: 2px solid #ccc;   /* 1. Border around section */
+  border-radius: 10px;       /* optional: rounded corners */
+}
+
+/* Text column */
+.spain-section.hotel .text-col {
+  flex: 1 1 300px;
+  padding: 0 30px;          /* 2. Paragraph 30px from each side */
+}
+
+.spain-section.hotel .text-col h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.spain-section.hotel .text-col p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Image column */
+.spain-section.hotel .img-col {
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 50px;
+  gap: 1rem;
 }
 
-.spain-page .hotel .text-col {
-  max-width: 700px;
-  margin: 0 auto;
+.spain-section.hotel .img-col img {
+  width: 100%;        /* 3. Ensures images scale nicely */
+  max-width: 500px;   /* Optional: prevents huge images */
+  height: auto;
+  object-fit: cover;  /* ensures good cropping */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  align-self: center; /* center image in column if narrower */
 }
 
-.spain-page .hotel .img-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.spain-page .hotel .img-col img {
-  width: 450px !important;
-  height: 300px !important;
-  object-fit: cover !important;
-  display: block !important;
-  margin: 0 auto !important;
-  border-radius: 10px !important;
-}
-
-.spain-page .category-title h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: white;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .spain-section.hotel {
+    flex-direction: column;
+  }
+  
+  .spain-section.hotel .text-col {
+    padding: 0 20px;   /* slightly smaller padding on mobile */
+  }
 }
