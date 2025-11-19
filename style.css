@@ -1,12 +1,12 @@
 /* =======================
    Top Bar Across All Pages
 ======================= */
-./* Top navigation bar */
+/* Top navigation bar */
 .navbar {
-  position: sticky; /* Sticks to top on scroll */
+  position: sticky;
   top: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #1e3a8a; /* Blue */
   color: #fff;
   display: flex;
   justify-content: flex-start;
@@ -22,7 +22,7 @@
 }
 
 .navbar a:hover {
-  background-color: #555;
+  background-color: #3b82f6; /* Lighter blue on hover */
   border-radius: 4px;
 }
 
@@ -32,11 +32,11 @@
   display: inline-block;
 }
 
-/* Dropdown content (hidden by default) */
+/* Dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #444;
+  background-color: #1e40af; /* Dropdown blue */
   min-width: 160px;
   top: 100%;
   left: 0;
@@ -51,7 +51,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #666;
+  background-color: #3b82f6; /* Blue hover */
 }
 
 /* Show dropdown on hover */
@@ -493,4 +493,5 @@ font-size: 1.1rem;      /* slightly bigger text */
     overflow: visible;
   }
 }
+
 
