@@ -142,39 +142,37 @@ header .page-title {
   color: white;
   text-shadow: 1px 1px 4px black;
    
-/* Hotels section layout */
-.spain-section.hotel {
+.spain-page .hotel {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-/* Text column width */
-.spain-section.hotel .text-col {
+.spain-page .hotel .text-col {
   max-width: 700px;
+  margin: 0 auto;
 }
 
-/* Images under text, centered */
-.spain-section.hotel .img-col {
+.spain-page .hotel .img-col {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
   margin-top: 20px;
-  align-items: center;
 }
 
-/* All images same size, only for Hotels section */
-.spain-section.hotel .img-col img {
-  width: 450px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
+.spain-page .hotel .img-col img {
+  width: 450px !important;
+  height: 300px !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 auto !important;
+  border-radius: 10px !important;
 }
 
-/* Hotels section title */
-.category-title h2 {
+.spain-page .category-title h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 30px;
