@@ -1,5 +1,6 @@
-
-/* Top bar across all pages */
+/* =======================
+   Top Bar Across All Pages
+======================= */
 .top-bar {
   position: fixed;
   top: 0;
@@ -13,106 +14,111 @@
   justify-content: left;
   font-size: 24px;
   z-index: 1000;
-   list-style-type: none;
+  list-style-type: none;
 }
-   ull{
-        float: left;
-  
-        padding: 20px;
-        color: white;
-    }
 
-/* Add spacing so content isn't hidden behind the fixed top bar */
+ul {
+  float: left;
+  padding: 20px;
+  color: white;
+}
+
+/* =======================
+   Page Content Spacing
+======================= */
 .Ireland,
 .ireland-page {
   margin-top: 100px;
   text-align: center;
 }
+
 .Spain,
 .spain-page {
   margin-top: 100px;
   text-align: center;
 }
-.Poland{
-    margin-top: 90px;
-    text-align: center;
-}
 
+.Poland {
+  margin-top: 90px;
+  text-align: center;
+}
 
 .Poland-page {
   margin-top: 90px;
   text-align: left;
-    .pol-flag {
-        background-image: url("folder/poland-polsha-flag.webp");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        h1{
-            margin: 0;
-            padding: 10px;
-        }
-        padding: 60px 10px;
-        text-align: center;
-
-        image-rendering: auto;
-        background-repeat: no-repeat;
-    }
-
-
 }
 
+.France-page {
+  color: white;
+}
 
-     .Poland-sob {
-        h1{
-            text-align: center;
-        }
-         text-align: center;
-         color: white;
-         background-color: black;
-         .palace {
-             height: auto;
-             width: 50%;
-             display: block;
-             margin:20px auto;
+.France-page h1,
+.France-page h2 {
+  color: black;
+}
 
-         }
-     }
+/* =======================
+   Poland Page Cleaned
+======================= */
+.Poland-page .pol-flag {
+  background-image: url("folder/poland-polsha-flag.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 10px;
+  text-align: center;
+}
 
+.Poland-sob {
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.Poland-sob .palace {
+  height: auto;
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+}
 
 .Poland-Destinations_Warsaw {
-    .war{
-        height:auto;
-        width: 50%;
-        display: block;
-        margin: 20px auto;
-    }
-    text-align: center;
-    color: white;
-    background-color: black;
+  text-align: center;
+  color: white;
+  background-color: black;
 }
-.Poland-zab{
-    background-color: black;
-    color: white;
-    text-align: center;
 
-    .Poland-z{
-        height: auto;
-        width: 50%;
-        display: block;
-        margin: 20px auto;
-    }
+.Poland-Destinations_Warsaw .war {
+  height: auto;
+  width: 50%;
+  display: block;
+  margin: 20px auto;
 }
-.Poland-Hotels{
-    h1,
-    h2 {
-        text-align: center;
-        text-emphasis: black;
-    }
 
+.Poland-zab {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
 
-/* Link styling */
+.Poland-zab .Poland-z {
+  height: auto;
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+.Poland-Hotels h1,
+.Poland-Hotels h2 {
+  text-align: center;
+  text-emphasis: black;
+}
+
+/* =======================
+   Links
+======================= */
 a {
-  color: blue;
+  color: yellow;
   text-decoration: none;
   font-size: 20px;
 }
@@ -120,13 +126,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.France-page {
-  colour:white;
-}
-.France-page h1 
-.France-page h2 {
-   color:black;
-}
+
+/* =======================
+   SPAIN PAGE STYLES
+======================= */
+
 /* Background */
 .spain-page {
   background-image: url("folder/Spain_flag.jpg");
@@ -136,15 +140,17 @@ a:hover {
   color: white;
   font-family: Arial, sans-serif;
   padding: 20px;
+  margin: 0;
 }
 
+/* Page title */
 .page-title {
   text-align: center;
   font-size: 48px;
   color: black;
 }
 
-/* Category Titles */
+/* Category titles */
 .category-title h1 {
   text-align: center;
   color: yellow;
@@ -152,85 +158,97 @@ a:hover {
   font-size: 36px;
 }
 
-/* UNIVERSAL SECTION LAYOUT */
+/* =======================
+   Section Layout
+======================= */
 .spain-section {
   display: flex;
   gap: 30px;
   padding: 30px 0;
   border-bottom: 3px solid white;
+  flex-wrap: wrap;
 }
 
-/* UNIVERSAL IMAGE SIZE */
-.paragraph-image {
-  width: 350px;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* TEXT COLUMNS */
+/* Text column */
 .text-col {
-  flex: 1;
+  flex: 1 1 50%;
   color: white;
 }
 
-/* IMAGE COLUMNS */
+/* Image column */
 .img-col {
-  flex: 1;
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* HOTELS — IMAGE UNDER TEXT */
-.hotel {
+/* Universal image size for Spain */
+.spain-page .paragraph-image {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Hotels - image under paragraph, centered */
+.spain-page .hotel {
   flex-direction: column;
   text-align: center;
 }
 
-.hotel .text-col {
+.spain-page .hotel .img-col {
   width: 100%;
+  align-items: center;
 }
 
-.hotel .img-col {
-  width: 100%;
-  align-items: center; /* Center images */
-}
-
-/* RESTAURANTS — TEXT LEFT, IMAGES RIGHT */
-.left-text {
+/* Restaurants - text left, images right */
+.spain-page .left-text {
   flex-direction: row;
+  align-items: flex-start;
 }
 
-.left-text .text-col {
+.spain-page .left-text .text-col {
   text-align: left;
   max-width: 60%;
 }
 
-.left-text .img-col {
+.spain-page .left-text .img-col {
   align-items: flex-end;
 }
 
-/* LANDMARKS — TEXT RIGHT, IMAGE LEFT */
-.img-left {
+/* Landmarks - text right, images left */
+.spain-page .img-left {
   flex-direction: row-reverse;
+  align-items: flex-start;
 }
 
-.img-left .text-col {
+.spain-page .img-left .text-col {
   text-align: right;
   max-width: 60%;
 }
 
-.img-left .img-col {
+.spain-page .img-left .img-col {
   align-items: flex-start;
 }
 
-/* Links */
-a {
-  font-size: 20px;
-  color: yellow;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+/* =======================
+   Responsive for Spain
+======================= */
+@media (max-width: 768px) {
+  .spain-section,
+  .spain-page .left-text,
+  .spain-page .img-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .spain-page .text-col,
+  .spain-page .img-col {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
 }
