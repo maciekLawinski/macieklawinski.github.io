@@ -131,6 +131,7 @@ a:hover {
    SPAIN PAGE STYLES
 ======================= */
 
+/* General page styles */
 body.spain-page {
   background-image: url("folder/Spain_flag.jpg");
   background-size: cover;
@@ -142,76 +143,80 @@ body.spain-page {
   padding: 20px;
 }
 
-.page-title {
-  text-align: center;
-  font-size: 48px;
-  color: black;
-  margin-bottom: 40px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+h1, h2, h3 {
+  margin: 10px 0;
 }
 
-h2 {
-  text-align: center;
-  color: yellow;
-  margin: 40px 0 20px;
-  font-size: 36px;
-}
-
-.category {
-  margin-bottom: 60px;
-}
-
+/* Section layout */
 .hotel, .restaurant, .landmark {
   display: flex;
-  gap: 30px;
-  margin-bottom: 50px;
+  gap: 20px;
+  margin-bottom: 40px;
   flex-wrap: wrap;
-  align-items: flex-start;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   padding-bottom: 20px;
 }
 
-.text-col {
-  flex: 1 1 50%;
-}
-
-.img-col {
-  flex: 1 1 50%;
-  display: flex;
+/* Specific layouts */
+.hotel {
   flex-direction: column;
-  gap: 15px;
+  text-align: center;
   align-items: center;
 }
 
-.image {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
+.restaurant {
+  flex-direction: row;
+  text-align: left;
+  align-items: flex-start;
 }
 
-.hotel { flex-direction: column; text-align: center; }
-.restaurant { flex-direction: row; text-align: left; }
-.landmark { flex-direction: row-reverse; text-align: right; }
+.landmark {
+  flex-direction: row-reverse;
+  text-align: right;
+  align-items: flex-start;
+}
 
+/* Columns */
+.text-col, .img-col {
+  flex: 1 1 50%;
+  min-width: 250px;
+}
+
+/* Images */
+.img-col img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;      /* fixed height */
+  object-fit: cover;   /* ensures uniform size without stretching */
+  border-radius: 10px;
+}
+
+/* Links */
 a {
   color: yellow;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-a:hover { text-decoration: underline; }
+a:hover {
+  text-decoration: underline;
+}
 
+/* Responsive */
 @media (max-width: 768px) {
   .hotel, .restaurant, .landmark {
     flex-direction: column;
     text-align: center;
   }
+
   .text-col, .img-col {
     width: 100%;
     max-width: 100%;
     align-items: center;
     text-align: center;
+  }
+
+  .img-col img {
+    height: 200px;  /* slightly smaller for mobile */
   }
 }
