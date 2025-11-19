@@ -536,3 +536,18 @@ font-size: 1.1rem;      /* slightly bigger text */
     font-weight: bold;
 }
 
+/* Centered Country Box */
+.video-container {
+    max-width: 700px;
+    margin: 30px auto;  /* centers the video */
+    text-align: center;
+    border: 2px solid #1e3a8a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
