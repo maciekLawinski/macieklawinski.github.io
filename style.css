@@ -221,12 +221,12 @@ header .page-title {
     height: auto;           /* maintain aspect ratio on small screens */
   }
 }
-/* Wrapper with border around all Restaurants section */
+/* Wrapper with border */
 .restaurants-wrapper {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 1.5rem;
-  border: 2px solid #888; /* single border */
+  border: 2px solid #888;
   border-radius: 10px;
 }
 
@@ -241,35 +241,34 @@ header .page-title {
   color: #333;
 }
 
-/* Restaurant content: text left, images right */
-.restaurants-wrapper .spain-section.restaurant .restaurant-content {
+/* Flex container for each restaurant */
+.restaurants-wrapper .spain-section.restaurant .restaurant-container {
   display: flex;
   gap: 2rem;
-  align-items: flex-start;
-  flex-wrap: wrap; /* stack on mobile */
+  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 
 /* Text column */
-.restaurants-wrapper .spain-section.restaurant .restaurant-content .text-col {
+.restaurants-wrapper .restaurant-container .text-col {
   flex: 1 1 50%;
   max-width: 50%;
   padding-right: 20px;
 }
 
-.restaurants-wrapper .spain-section.restaurant .restaurant-content .text-col h3 {
+.restaurants-wrapper .restaurant-container .text-col h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.restaurants-wrapper .spain-section.restaurant .restaurant-content .text-col p {
+.restaurants-wrapper .restaurant-container .text-col p {
   font-size: 1rem;
   line-height: 1.6;
   color: #555;
 }
 
 /* Image column */
-.restaurants-wrapper .spain-section.restaurant .restaurant-content .img-col {
+.restaurants-wrapper .restaurant-container .img-col {
   flex: 1 1 50%;
   max-width: 50%;
   display: flex;
@@ -279,8 +278,8 @@ header .page-title {
   align-items: flex-end;
 }
 
-.restaurants-wrapper .spain-section.restaurant .restaurant-content .img-col img {
-  width: 300px;   /* fixed size */
+.restaurants-wrapper .restaurant-container .img-col img {
+  width: 300px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
@@ -288,19 +287,20 @@ header .page-title {
   flex-shrink: 0;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
-  .restaurants-wrapper .spain-section.restaurant .restaurant-content {
+  .restaurants-wrapper .restaurant-container {
     flex-direction: column;
   }
 
-  .restaurants-wrapper .spain-section.restaurant .restaurant-content .text-col,
-  .restaurants-wrapper .spain-section.restaurant .restaurant-content .img-col {
+  .restaurants-wrapper .restaurant-container .text-col,
+  .restaurants-wrapper .restaurant-container .img-col {
     flex: 1 1 100%;
     max-width: 100%;
   }
 
-  .restaurants-wrapper .spain-section.restaurant .restaurant-content .img-col {
+  .restaurants-wrapper .restaurant-container .img-col {
     align-items: center;
   }
 }
+
