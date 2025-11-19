@@ -198,9 +198,9 @@ header .page-title {
 }
 
 .hotels-wrapper .spain-section.hotel .img-col img {
-  max-width: 85%;        /* 15% smaller images */
-  height: auto;
-  object-fit: cover;
+  width: 300px;          /* fixed width */
+  height: 200px;         /* fixed height */
+  object-fit: cover;     /* crops to fill the box nicely */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -219,3 +219,4 @@ header .page-title {
     max-width: 100%;      /* full width on mobile */
   }
 }
+
