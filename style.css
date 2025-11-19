@@ -107,6 +107,13 @@
 }
 
 .Poland-sob {
+   font-size: 1.1rem;
+         line-height: 1.8;
+         color: #555;
+         text-align: justify;
+         margin: 2rem auto;
+         padding: 1.5rem;
+         max-width: 1300px;
   text-align: center;
   color: white;
   background-color: black;
@@ -120,6 +127,13 @@
 }
 
 .Poland-Destinations_Warsaw {
+   font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 1300px;
   text-align: center;
   color: white;
   background-color: black;
@@ -133,6 +147,13 @@
 }
 
 .Poland-zab {
+   font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 1300px;
   background-color: black;
   color: white;
   text-align: center;
@@ -145,10 +166,59 @@
   margin: 20px auto;
 }
 
-.Poland-Hotels h1,
-.Poland-Hotels h2 {
-  text-align: center;
-  text-emphasis: black;
+.Poland-Hotels {
+  font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 2px solid #888;
+    border-radius: 10px;
+    h1,
+    h2 {
+        text-align: center;
+        text-emphasis: black;
+    }
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 1300px;
+    background-color: black;
+    color: white;
+}
+
+.Poland-Restaurants{
+     text-align: center;
+     line-height: 1.8;
+
+     color: white;
+     background-color: black;
+     max-width: 1200px;
+     margin: 2rem auto;
+     padding: 1.5rem;
+     border: 2px solid #888;
+     border-radius: 10px;
+     flex: 1 1 300px;
+     padding: 0 30px;
+    h3{
+        text-align: center
+    }
+     p,
+     h3 {
+         font-size: 1.1rem;   /* bigger text */
+         line-height: 1.8;    /* more spacing */
+         color: white;
+         text-align: right;
+     }
+ }
+.stol {
+    width: 60%;
+    height: 40%;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 /* =======================
@@ -551,4 +621,5 @@ font-size: 1.1rem;      /* slightly bigger text */
     height: auto;
     display: block;
 }
+
 
