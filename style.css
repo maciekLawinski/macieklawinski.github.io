@@ -637,10 +637,12 @@ font-size: 1.1rem;      /* slightly bigger text */
         display: center;
         gap: 30px;
         p, h2 {
+         font-size: 1..4rem;
         text-align: center;
     }
     }
 }
+
 
 
 
