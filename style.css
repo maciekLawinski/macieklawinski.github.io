@@ -627,6 +627,7 @@ font-size: 1.1rem;      /* slightly bigger text */
 
 /*BIO*/
 .bio {
+   .in-bio {
     width: 600px;
         margin: 50px auto;
         padding: 30px;
@@ -640,6 +641,7 @@ font-size: 1.1rem;      /* slightly bigger text */
     }
     }
 }
+
 
 
 
