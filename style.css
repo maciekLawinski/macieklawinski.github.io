@@ -606,30 +606,6 @@ footer {
 .leftcont {
   text-align: center;
 }
-.middlecont {
-  text-align: center;
-  padding-right: 45%;
-}
-.listcont {
-  line-height: 10mm;
-  padding-top: 10%;
-}
-.linkscont {
-  border-style: hidden;
-  background-color: #e8efff;
-}
-.links2cont {
-  border-style: hidden;
-  background-color: #e8efff;
-}
-.pic1cont {
-  height: 20%;
-  width: 20%
-}
-.pic2cont {
-  height: 20%;
-  width: 20%;
-}
 .BorderBottomcont {
   white-space: nowrap;
   border-style: hidden;
@@ -643,5 +619,6 @@ footer {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
 }
+
 
 
