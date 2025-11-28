@@ -95,7 +95,7 @@
   padding: 60px 10px;
   text-align: center;
 }
-
+/* Poland destinations*/
 .Poland-sob {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -149,7 +149,7 @@
   display: block;
   margin: 20px auto;
 }
-
+/* Poland Hotels*/
 .Poland-Hotels {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -167,7 +167,7 @@
 .Poland-Hotels h2 {
   text-align: center;
 }
-
+/* Poland Restaurants*/
 .Poland-Restaurants {
   text-align: center;
   line-height: 1.8;
@@ -619,6 +619,7 @@ footer {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
 }
+
 
 
 
